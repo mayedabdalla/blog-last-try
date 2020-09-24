@@ -1,0 +1,18 @@
+query posts {
+    posts {
+        slug
+        id
+        title
+        createdAt
+    }
+}
+
+query post($slug: String) {
+    post(slug: $slug){
+        slug
+        id
+        title
+        content
+        createdAt
+    }
+}
